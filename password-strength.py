@@ -1,10 +1,5 @@
-password = input('Введите пароль: ')
-
-
 def is_very_long(password):
-    if len(password) > 12:
-        return True
-    return False
+    return len(password) > 12
 
 
 def has_digit(password):
@@ -38,4 +33,10 @@ def get_rating(password):
     return score
 
 
-get_rating(password)
+def main():
+    password = input('Введите пароль: ')
+    get_rating(password)
+
+
+if __name__ == '__main__':
+    main()
